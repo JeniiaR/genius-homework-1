@@ -4,19 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beauty Zone</title>
+    <style>
+      /* h1 {
+        background-color: blueviolet;
+      } */
+    </style>
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header>
       <nav>
-        <a href="#">
+        <a href=" ./index.html">
           <img src="./images/logo.svg" alt="Логотип Beauty Zone" />
         </a>
         <ul>
-          <!-- <li><a href="#" target="_blank">Про нас</a></li> посилання на відкриття іншої сторінки -->
-          <li><a href="#">Про нас</a></li>
-          <li><a href="#">Чому ми</a></li>
-          <li><a href="#">Наші процедури</a></li>
-          <li><a href="#">Контакти</a></li>
+          <li><a class="link" href="#about_us">Про нас</a></li>
+          <li><a class="link" href="#choose_us">Чому ми</a></li>
+          <li><a class="link" href="#our_procedure">Наші процедури</a></li>
+          <li><a class="link" href="#contacts">Контакти</a></li>
         </ul>
       </nav>
       <!-- замовити дзвінок -->
@@ -24,25 +29,32 @@
     <main>
       <section>
         <p>Косметологічна клініка</p>
-        <h1>Beauty Zone</h1>
-        <button type="button">Замовити дзвінок</button>
+        <h1 class="hero-title">
+          Beauty
+          <p>Zone</p>
+        </h1>
+        <button type="button" class="button green">Замовити дзвінок</button>
       </section>
-      <section>
-        <h2>Перевтілюйтесь в <span>beauty zone!</span></h2>
-        <p>
+      <section id="about_us">
+        <h2 class="section-title">
+          Перевтілюйтесь в <span class="accent"> beaty zone!</span>
+        </h2>
+        <p class="paragraf-text">
           Наша косметологічна клініка пропонує вам професійні послуги з догляду
           за шкірою обличчя та тіла.
         </p>
         <img src="./images/face1.jpg" alt="обличчя до перевтілення" />
-        <p>
+        <p class="paragraf-text">
           B <span>beauty zone</span> ми гарантуємо найвищі стандарти якості та
           приємний сервіс. Наші косметологічні процедури та препарати допоможуть
           вам підтримувати свою красу та молодість. З нами краса назавжди!
         </p>
         <img src="./images/face2.jpg" alt="обличчя після перевтілення" />
       </section>
-      <section>
-        <h2>Чому люди <span> обирають нас</span></h2>
+      <section id="choose_us">
+        <h2 class="section-title">
+          Чому люди <span class="accent"> обирають нас</span>
+        </h2>
         <ul>
           <li>
             <article>
@@ -70,8 +82,10 @@
           </li>
         </ul>
       </section>
-      <section>
-        <h2>Наші <span> процедури</span></h2>
+      <section id="our_procedure">
+        <h2 class="section-title">
+          Наші <span class="accent"> процедури</span>
+        </h2>
         <ul>
           <li>
             <article>
@@ -96,8 +110,18 @@
           </li>
         </ul>
       </section>
-      <section>
-        <h2>Як нас <span> знайти</span></h2>
+      <section id="contacts">
+        <h2 class="section-title">
+          Як нас <span class="accent"> знайти</span>
+        </h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.9323900544987!2d30.515600375578764!3d50.44235998794747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8b5f6338d%3A0x25c7f06ad686451c!2z0LHRg9C7LiDQotCw0YDQsNGB0LAg0KjQtdCy0YfQtdC90LrQviwgNSwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1701340823614!5m2!1sru!2sua"
+          width="605"
+          height="481"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </section>
     </main>
     <footer>
@@ -106,10 +130,10 @@
           <img src="./images/logo.svg" alt="Логотип Beauty Zone" />
         </a>
         <ul>
-          <li><a href="#">Про нас</a></li>
-          <li><a href="#">Чому ми</a></li>
-          <li><a href="#">Наші процедури</a></li>
-          <li><a href="#">Контакти</a></li>
+          <li><a class="link" href="#">Про нас</a></li>
+          <li><a class="link" href="#">Чому ми</a></li>
+          <li><a class="link" href="#">Наші процедури</a></li>
+          <li><a class="link" href="#">Контакти</a></li>
         </ul>
       </nav>
       <address>
@@ -140,7 +164,7 @@
           </li>
         </ul>
         <a href="#" target="_blank">Політика конфіденційності</a>
-        <p>© 2022,3.4, 5 Дані захищені</p>
+        <p>&copy; 2023 Дані захищені</p>
       </address>
     </footer>
   </body>
