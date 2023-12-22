@@ -1,14 +1,49 @@
+/* roboto-regular - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-v30-latin-regular.woff2') format('woff2');
+    
+}
+
+/* roboto-500 - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/roboto-v30-latin-500.woff2') format('woff2');
+    
+}
+
+/* roboto-700 - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/roboto-v30-latin-700.woff2') format('woff2');
+    
+}
+
 :root{
     --color-brand-light:#2B7FFF;
     --color-brand-dark: #011C44;
     --color-primary-dark: black;
     --color-primary-light: #FFFFFF;
+    --font-text: Roboto; /* сімейство шріфтів*/
 }
 ul {
     list-style-type:none;
 }
 body{
     color: var(--color-brand-dark);
+    font-family: var(--font-text), sans-serif;
+    font-size: 22px;
+    line-height: 1.72727273;
+    font-weight: 400;
 }
 /* BUTTON */
 .button{
@@ -18,7 +53,6 @@ body{
     border-radius: 8px;
     cursor: pointer;
     size: 10 px;
-
 }
 .button:hover {
     background-color: transparent;
@@ -28,21 +62,49 @@ body{
     border: 4px solid var(--color-primary-dark);
 }
 /* LINK */
-.link{
+.header-link {
     color:var(--color-brand-dark);
+    font-size: 18px;
+    line-height: 1.17166667;
+    text-decoration: none;
 }
-.link:hover {
+.header-link:hover {
     color:var(--color-brand-light);
+    text-decoration:none;
 }
+/* Shef-TITLE */
 .hero-title{
     color: var(--color-brand-light);
+    text-decoration:solid;
+    font-size: 140px;
+    font-weight: 700; 
+    line-height: 0.81428514;
+    text-transform: capitalize;
+    /* font-style: italic;  нахил тексту*/
+    /* text-shadow: 1px 1px 16px #011C44; тінь на тексті */
 }
-/* .section-title  {
-    color: var(--color-brand-dark);
-} */
+/* Section-TITLE H2 */
+.section-title  {
+    text-align: center;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.1565625;
+} 
 .section-title .accent {
     color: var(--color-brand-light);
 }
-/* .paragraf-text {
-    color: var(--color-brand-dark);
-} */
+.paragraf-text span{
+    text-transform: capitalize;
+}
+.list-procedures {
+    line-height: 1.181818;
+}
+    /* white-space: nowrap;  не треба переходити на інший рядок при велики текстах*/
+.footer-link a {
+    color: var(--color-primary-light);
+    text-decoration: none;
+    text-shadow: -3px -3px 3px red;
+    }
+
+
+
